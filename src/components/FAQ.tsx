@@ -35,7 +35,7 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-10 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0f172a] mb-4">PERGUNTAS FREQUENTES</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a0a2e] mb-4">PERGUNTAS FREQUENTES</h2>
             <p className="text-gray-600 text-lg">Tire suas dúvidas sobre o curso de ADS da FASUL</p>
           </div>
 
@@ -45,9 +45,9 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200 rounded-lg px-6 data-[state=open]:border-cyan-500"
+                className="border border-gray-200 rounded-lg px-6 data-[state=open]:border-violet-500"
               >
-                <AccordionTrigger className="text-left text-[#0f172a] font-medium text-base md:text-lg hover:no-underline py-5">
+                <AccordionTrigger className="text-left text-[#1a0a2e] font-medium text-base md:text-lg hover:no-underline py-5">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 text-base pb-5">{item.answer}</AccordionContent>

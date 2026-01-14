@@ -17,25 +17,29 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Brand colors - Blue palette */
-    --primary: 217 91% 53%;
+    /* Brand colors - Purple & Cyan Tech palette */
+    --primary: 270 70% 55%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 217 91% 60%;
+    --secondary: 185 80% 45%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Blue light for benefits section */
-    --cyan-light: 217 85% 58%;
-    --cyan-light-foreground: 0 0% 100%;
+    /* Cyan for tech accents */
+    --cyan: 185 80% 50%;
+    --cyan-foreground: 0 0% 100%;
+    
+    /* Purple for primary actions */
+    --purple: 270 70% 55%;
+    --purple-foreground: 0 0% 100%;
 
-    /* Dark blue for backgrounds */
-    --dark-blue: 200 60% 15%;
+    /* Dark backgrounds */
+    --dark-blue: 250 40% 10%;
 
     --muted: 260 15% 96%;
     --muted-foreground: 260 20% 40%;
 
-    /* CTA - Blue */
-    --accent: 217 91% 53%;
+    /* Accent - Cyan */
+    --accent: 185 80% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,19 +47,19 @@ All colors MUST be HSL.
 
     --border: 260 13% 91%;
     --input: 260 13% 91%;
-    --ring: 190 82% 50%;
+    --ring: 270 70% 55%;
 
     --radius: 0.75rem;
     
-    /* Gradient colors - Navy blue to light blue */
-    --gradient-start: 210 100% 8%;
-    --gradient-mid: 197 90% 26%;
-    --gradient-end: 199 85% 60%;
+    /* Gradient colors */
+    --gradient-start: 260 50% 8%;
+    --gradient-mid: 270 60% 30%;
+    --gradient-end: 185 80% 50%;
     
     /* Legacy gradient colors */
-    --gradient-cyan: 350 80% 60%;
-    --gradient-purple: 320 75% 55%;
-    --gradient-blue: 280 70% 50%;
+    --gradient-cyan: 185 80% 50%;
+    --gradient-purple: 270 70% 55%;
+    --gradient-blue: 250 60% 45%;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -64,20 +68,13 @@ All colors MUST be HSL.
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-primary: 270 70% 55%;
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 270 70% 55%;
   }
 
   .dark {
@@ -136,27 +133,27 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Fixed gradient background - Navy to light blue */
+  /* Fixed gradient background - Purple to cyan tech */
   .gradient-animated {
     background: linear-gradient(135deg, 
-      #02101f 0%, 
-      #084D7B 40%, 
-      #3b9fd1 100%
+      #1a0a2e 0%, 
+      #4c1d95 40%, 
+      #06b6d4 100%
     );
   }
   
-  /* Tech gradient - Dark slate to cyan */
+  /* Tech gradient - Purple to cyan */
   .tech-gradient {
     background: linear-gradient(135deg, 
-      #0a1628 0%, 
-      #0e4158 50%, 
+      #1a0a2e 0%, 
+      #581c87 45%, 
       #0891b2 100%
     );
   }
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(217 91% 53%), hsl(217 91% 65%));
+    background: linear-gradient(135deg, hsl(270 70% 55%), hsl(185 80% 50%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -174,7 +171,7 @@ All colors MUST be HSL.
     }
     50% {
       transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(6, 182, 212, 0.6);
+      box-shadow: 0 15px 30px rgba(139, 92, 246, 0.6);
     }
     100% {
       transform: scale(1);
@@ -201,12 +198,12 @@ All colors MUST be HSL.
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
-  /* Tech glassmorphism effect */
+  /* Tech glassmorphism effect - Purple & Cyan */
   .glass-effect-tech {
-    background: rgba(6, 182, 212, 0.1);
+    background: rgba(139, 92, 246, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(6, 182, 212, 0.3);
+    border: 1px solid rgba(139, 92, 246, 0.3);
   }
 }
 
@@ -228,22 +225,22 @@ All colors MUST be HSL.
 }
 
 .benefits-card {
-  background-color: #041029;
+  background-color: #1a0a2e;
   background-image: 
-    radial-gradient(ellipse at 12% 88%, rgba(12, 96, 124, 0.65) 0, rgba(12, 96, 124, 0.25) 32%, rgba(4, 16, 41, 0) 60%),
-    radial-gradient(ellipse at 94% 20%, rgba(103, 41, 166, 0.65) 0, rgba(103, 41, 166, 0.25) 32%, rgba(4, 16, 41, 0) 56%),
-    linear-gradient(180deg, #050d21 0, #040b1a 55%, #020711 100%);
+    radial-gradient(ellipse at 12% 88%, rgba(6, 182, 212, 0.5) 0, rgba(6, 182, 212, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
+    radial-gradient(ellipse at 94% 20%, rgba(139, 92, 246, 0.6) 0, rgba(139, 92, 246, 0.25) 32%, rgba(26, 10, 46, 0) 56%),
+    linear-gradient(180deg, #1a0a2e 0, #130722 55%, #0d0518 100%);
   background-repeat: no-repeat;
   background-size: 150% 150%, 130% 130%, cover;
   background-position: left bottom, right top, center;
 }
 
 .benefits-card-tech {
-  background-color: #0a1628;
+  background-color: #1a0a2e;
   background-image: 
-    radial-gradient(ellipse at 12% 88%, rgba(6, 182, 212, 0.5) 0, rgba(6, 182, 212, 0.2) 32%, rgba(10, 22, 40, 0) 60%),
-    radial-gradient(ellipse at 94% 20%, rgba(14, 116, 144, 0.6) 0, rgba(14, 116, 144, 0.25) 32%, rgba(10, 22, 40, 0) 56%),
-    linear-gradient(180deg, #0f172a 0, #0a1628 55%, #061017 100%);
+    radial-gradient(ellipse at 12% 88%, rgba(6, 182, 212, 0.5) 0, rgba(6, 182, 212, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
+    radial-gradient(ellipse at 94% 20%, rgba(139, 92, 246, 0.6) 0, rgba(139, 92, 246, 0.25) 32%, rgba(26, 10, 46, 0) 56%),
+    linear-gradient(180deg, #1a0a2e 0, #130722 55%, #0d0518 100%);
   background-repeat: no-repeat;
   background-size: 150% 150%, 130% 130%, cover;
   background-position: left bottom, right top, center;
@@ -251,13 +248,13 @@ All colors MUST be HSL.
 
 .benefits-button-tech {
   width: 100%;
-  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
   color: white;
   font-weight: 700;
   font-size: 0.875rem;
   padding: 0.6rem 0.9rem;
   border-radius: 9999px;
-  box-shadow: 0 20px 25px -5px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.3);
   transition: all 300ms;
   display: inline-flex;
   align-items: center;
@@ -267,8 +264,8 @@ All colors MUST be HSL.
 }
 
 .benefits-button-tech:hover {
-  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
-  box-shadow: 0 25px 50px -12px rgba(6, 182, 212, 0.5);
+  background: linear-gradient(135deg, #a78bfa 0%, #22d3ee 100%);
+  box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.5);
   transform: scale(1.05);
 }
 

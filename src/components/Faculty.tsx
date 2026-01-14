@@ -40,7 +40,7 @@ const Faculty = () => {
       className="pt-12 md:pt-24 pb-16 md:pb-32 relative overflow-hidden"
       style={{
         background:
-          "linear-gradient(to top, #0f172a 0%, #0f172a 30%, #0e4158 100%)",
+          "linear-gradient(to top, #1a0a2e 0%, #1a0a2e 30%, #3b1472 100%)",
       }}
     >
       <div className="absolute inset-0 bg-black/10"></div>
@@ -85,7 +85,7 @@ const Faculty = () => {
                 className="flex flex-col items-center text-center group cursor-pointer"
               >
                 <div className="relative mb-3 md:mb-4 overflow-hidden rounded-lg">
-                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-violet-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img
                     src={professor.image}
                     alt={professor.name}
@@ -115,7 +115,7 @@ const Faculty = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#0f172a"
+            fill="#1a0a2e"
           />
         </svg>
       </div>
