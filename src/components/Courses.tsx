@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   GraduationCap,
   Monitor,
@@ -81,7 +80,7 @@ const Courses = () => {
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-cyan-600" />
+                    <GraduationCap className="w-5 h-5 text-violet-600" />
                     <span className="text-sm font-medium text-gray-700">Tecnólogo</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -89,7 +88,7 @@ const Courses = () => {
                     <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-cyan-600" />
+                    <Clock className="w-5 h-5 text-violet-600" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -105,7 +104,7 @@ const Courses = () => {
                     <span className="text-lg text-gray-900">/mês</span>
                     <span className="text-gray-400 line-through ml-2">{courseDetails.regularPrice}</span>
                   </div>
-                  <span className="inline-block text-xs bg-gradient-to-r from-cyan-500 to-teal-400 text-white px-3 py-1 rounded-full font-semibold">
+                  <span className="inline-block text-xs bg-gradient-to-r from-violet-500 to-cyan-400 text-white px-3 py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
                   </span>
                 </div>
@@ -113,7 +112,7 @@ const Courses = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
-                    className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(6,182,212,0.5)]"
+                    className="bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
@@ -124,7 +123,7 @@ const Courses = () => {
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-cyan-600 font-bold text-base border-2 border-cyan-600 rounded-full py-3 px-6 hover:bg-cyan-600/10 transition-colors text-center"
+                    className="text-violet-600 font-bold text-base border-2 border-violet-600 rounded-full py-3 px-6 hover:bg-violet-600/10 transition-colors text-center"
                   >
                     SAIBA MAIS
                   </a>
@@ -141,9 +140,9 @@ const Courses = () => {
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-cyan-500/20"
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
                   <area.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
@@ -163,7 +162,7 @@ const Courses = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#0f172a"
+            fill="#1a0a2e"
           />
         </svg>
       </div>

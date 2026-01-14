@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/98 via-[#0a1628]/80 via-60% to-[#0a1628]/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1a0a2e]/98 via-[#1a0a2e]/80 via-60% to-[#1a0a2e]/40"></div>
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +30,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
-            <div className="inline-block bg-cyan-500/20 backdrop-blur-sm border border-cyan-400/40 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-cyan-300 font-semibold text-sm">TECNÓLOGO EM ADS</span>
+            <div className="inline-block bg-violet-500/20 backdrop-blur-sm border border-violet-400/40 rounded-full px-4 py-1.5 mb-4">
+              <span className="text-violet-300 font-semibold text-sm">TECNÓLOGO EM ADS</span>
             </div>
 
             <h1
@@ -40,7 +40,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.4)",
               }}
             >
-              TORNE-SE <span className="text-cyan-400">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
+              TORNE-SE <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-cyan-500 text-white hover:bg-cyan-400 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
+                  className="bg-gradient-to-r from-violet-600 to-cyan-500 text-white hover:from-violet-500 hover:to-cyan-400 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
                 >
                   QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
@@ -69,7 +69,7 @@ const Hero = () => {
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Clock className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-cyan-400" />
+                <Clock className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-violet-400" />
                 <span className="text-xs md:text-sm font-medium">5 Semestres</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
