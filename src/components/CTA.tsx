@@ -62,7 +62,9 @@ const CTA = () => {
               <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-6">
                 GARANTA SUA VAGA NO
                 <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">TECNÓLOGO EM ADS</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">
+                  GRADUAÇÃO EM ADS
+                </span>
               </h2>
               <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
                 Aproveite condições especiais e comece sua jornada para se tornar um desenvolvedor de sucesso.
@@ -70,7 +72,9 @@ const CTA = () => {
             </div>
 
             <div className="text-center">
-              <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4 text-white/80">OFERTA ESPECIAL ACABA EM:</p>
+              <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4 text-white/80">
+                OFERTA ESPECIAL ACABA EM:
+              </p>
               <div className="inline-flex gap-1 md:gap-3 bg-black/30 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6 border border-violet-500/20">
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
@@ -104,13 +108,16 @@ const CTA = () => {
           </div>
 
           <div className="text-center px-2">
-            <a href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:from-violet-500 hover:to-blue-500 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-[0_0_25px_rgba(139,92,246,0.6)] hover:shadow-[0_0_35px_rgba(139,92,246,0.8)] animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
               >
-                QUERO ME MATRICULAR AGORA!{" "}
-                <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+                QUERO ME MATRICULAR AGORA! <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
               </Button>
             </a>
 
