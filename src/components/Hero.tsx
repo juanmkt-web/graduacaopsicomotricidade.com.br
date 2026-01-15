@@ -44,8 +44,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
-              Domine programação, banco de dados e desenvolvimento de sistemas. Entre para uma das áreas mais
-              valorizadas do mercado, com salários acima da média e oportunidades em todo o mundo.
+              Não perca a maior oportunidade da década. Saia do zero e aprenda a desenvolver soluções, apps e sites que
+              valem ouro no mercado corporativo atual.
             </p>
 
             <div className="mb-5 md:mb-8 flex justify-center md:justify-start">
