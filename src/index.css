@@ -135,6 +135,17 @@ All colors MUST be HSL.
   }
 }
 
+/* Hero background positioning */
+.hero-background {
+  background-position: top right;
+}
+
+@media (max-width: 550px) {
+  .hero-background {
+    background-position: top center;
+  }
+}
+
 @layer utilities {
   /* Fixed gradient background - Purple to dark blue tech */
   .gradient-animated {
