@@ -53,11 +53,11 @@ const Courses = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-12 sm:pt-16">
         {/* Header */}
-        <div className="text-center mb-12 text-white animate-fade-in">
-          <h2 className="text-3xl lg:text-5xl font-bold mb-4">CONHEÇA O CURSO</h2>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+        <div className="text-center mb-8 sm:mb-12 text-white animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 sm:mb-4">CONHEÇA O CURSO</h2>
+          <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed px-2">
             O Tecnólogo em ADS é uma das formações mais valorizadas do mercado de tecnologia, com alta empregabilidade e
             salários competitivos.
           </p>
@@ -78,57 +78,57 @@ const Courses = () => {
               </div>
 
               {/* Content Side */}
-              <div className="p-6 lg:p-10">
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{courseDetails.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{courseDetails.description}</p>
+              <div className="p-4 sm:p-6 lg:p-10">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">{courseDetails.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">{courseDetails.description}</p>
 
                 {/* Course Info */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-[#2563EB]" />
-                    <span className="text-sm font-medium text-gray-700">Tecnólogo</span>
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
+                    <span className="text-xs sm:text-sm font-medium text-gray-700">Tecnólogo</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Monitor className="w-5 h-5 text-[#2563EB]" />
-                    <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <Monitor className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
+                    <span className="text-xs sm:text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-[#2563EB]" />
-                    <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
+                    <span className="text-xs sm:text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-[#2563EB]" />
-                    <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
+                    <span className="text-xs sm:text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
                   </div>
                 </div>
 
                 {/* Pricing */}
-                <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
-                    <span className="text-lg text-gray-900">/mês</span>
-                    <span className="text-gray-400 line-through ml-2">{courseDetails.regularPrice}</span>
+                <div className="bg-gray-50 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
+                  <div className="flex flex-wrap items-baseline gap-1 sm:gap-2 mb-1">
+                    <span className="text-2xl sm:text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
+                    <span className="text-base sm:text-lg text-gray-900">/mês</span>
+                    <span className="text-gray-400 line-through ml-1 sm:ml-2 text-sm sm:text-base">{courseDetails.regularPrice}</span>
                   </div>
-                  <span className="inline-block text-xs bg-gradient-to-r from-violet-500 to-blue-500 text-white px-3 py-1 rounded-full font-semibold">
+                  <span className="inline-block text-[10px] sm:text-xs bg-gradient-to-r from-violet-500 to-blue-500 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
                   </span>
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                   <Button
-                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-sm sm:text-base py-5 sm:py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
-                      MATRICULE-SE AGORA <ArrowRight className="ml-2 h-5 w-5" />
+                      MATRICULE-SE AGORA <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                     </a>
                   </Button>
                   <a
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-violet-600 font-bold text-base border-2 border-violet-600 rounded-full py-3 px-6 hover:bg-violet-600/10 transition-colors text-center"
+                    className="text-violet-600 font-bold text-sm sm:text-base border-2 border-violet-600 rounded-full py-2.5 sm:py-3 px-4 sm:px-6 hover:bg-violet-600/10 transition-colors text-center"
                   >
                     SAIBA MAIS
                   </a>
@@ -140,18 +140,18 @@ const Courses = () => {
 
         {/* Career Areas */}
         <div className="max-w-6xl mx-auto mb-16">
-          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">ÁREAS DE ATUAÇÃO</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-6 sm:mb-8">ÁREAS DE ATUAÇÃO</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <area.icon className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                  <area.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
-                <p className="text-white/70 text-xs lg:text-sm">{area.description}</p>
+                <h4 className="text-white font-bold text-xs sm:text-sm lg:text-base mb-1">{area.title}</h4>
+                <p className="text-white/70 text-[10px] sm:text-xs lg:text-sm">{area.description}</p>
               </div>
             ))}
           </div>
