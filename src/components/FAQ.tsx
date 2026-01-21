@@ -2,19 +2,19 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Qual a duração do curso de Análise e Desenvolvimento de Sistemas?",
+    question: "Qual a duração do Curso de Análise e Desenvolvimento de Sistemas?",
     answer:
-      "O curso de Tecnólogo em ADS tem duração de 5 semestres (2 anos e meio), com carga horária total de 2.400 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra graduação.",
+      "O Curso de Tecnólogo em ADS tem duração de 5 semestres, com carga horária total de 2.120 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha Cursado outra Graduação.",
   },
   {
     question: "O diploma de ADS EaD é reconhecido pelo MEC?",
     answer:
-      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas tem a mesma validade de cursos presenciais e é reconhecido em todo o território nacional.",
+      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas tem a mesma validade de Cursos presenciais e é reconhecido em todo o território nacional.",
   },
   {
-    question: "Preciso saber programar para começar o curso?",
+    question: "Preciso saber programar para começar o Curso?",
     answer:
-      "Não! O curso foi desenvolvido para ensinar programação do zero. Você aprenderá desde lógica de programação até linguagens avançadas como Python, Java, JavaScript e SQL, mesmo sem nenhum conhecimento prévio.",
+      "Não! O Curso foi desenvolvido para ensinar programação do zero. Você aprenderá desde lógica de programação até linguagens avançadas como Python, Java, JavaScript e SQL, mesmo sem nenhum conhecimento prévio.",
   },
   {
     question: "Quais são as principais áreas de atuação para quem forma em ADS?",
@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: "Qual o valor do investimento?",
     answer:
-      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
   },
 ];
 
@@ -35,8 +35,12 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-4 sm:mb-8 md:mb-10 text-center">
-            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 sm:mb-4">PERGUNTAS FREQUENTES</h2>
-            <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">Tire suas dúvidas sobre o curso de ADS da FASUL</p>
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 sm:mb-4">
+              PERGUNTAS FREQUENTES
+            </h2>
+            <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">
+              Tire suas dúvidas sobre o curso de ADS da FASUL
+            </p>
           </div>
 
           {/* FAQ Accordion */}
@@ -50,7 +54,9 @@ const FAQ = () => {
                 <AccordionTrigger className="text-left text-[#1E2842] font-medium text-sm sm:text-base md:text-lg hover:no-underline py-3 sm:py-4 md:py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-xs sm:text-sm md:text-base pb-3 sm:pb-4 md:pb-5">{item.answer}</AccordionContent>
+                <AccordionContent className="text-gray-600 text-xs sm:text-sm md:text-base pb-3 sm:pb-4 md:pb-5">
+                  {item.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
