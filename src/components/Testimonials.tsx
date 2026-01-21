@@ -68,7 +68,7 @@ const Testimonials = () => {
             DESENVOLVEDORES <span className="text-[#783BED]">DE SUCESSO</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-lg text-white/90 max-w-3xl mx-auto px-2">
-            Veja como o curso de ADS transformou a carreira dos nossos alunos.
+            Veja como o Curso de ADS transformou a carreira dos nossos alunos.
           </p>
         </div>
 
