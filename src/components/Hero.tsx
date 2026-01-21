@@ -5,11 +5,10 @@ import heroBackground from "@/assets/hero-tech-grad.jpg";
 const Hero = () => {
   return (
     <section
-      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16 min-h-[500px] sm:min-h-[550px] md:min-h-[600px]"
+      className="hero-background relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16 min-h-[500px] sm:min-h-[550px] md:min-h-[600px]"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",
-        backgroundPosition: "top right",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#1E2842]/90 via-[#1E2842]/60 via-50% to-transparent to-70%"></div>
