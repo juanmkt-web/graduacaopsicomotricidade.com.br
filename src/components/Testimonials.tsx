@@ -48,7 +48,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="depoimentos" className="py-12 md:py-24 desktop:pb-[116px] bg-[#1E2842] relative">
+    <section id="depoimentos" className="py-10 sm:py-12 md:py-24 desktop:pb-[116px] bg-[#1E2842] relative">
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20 pointer-events-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,12 +62,12 @@ const Testimonials = () => {
           />
         </svg>
       </div>
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-6 md:mb-12 animate-fade-in text-white">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10">
+        <div className="text-center mb-5 sm:mb-6 md:mb-12 animate-fade-in text-white">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
             DESENVOLVEDORES <span className="text-[#783BED]">DE SUCESSO</span>
           </h2>
-          <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-lg text-white/90 max-w-3xl mx-auto px-2">
             Veja como o curso de ADS transformou a carreira dos nossos alunos.
           </p>
         </div>
@@ -97,20 +97,20 @@ const Testimonials = () => {
           </button>
 
           <div
-            className="glass-effect-tech rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-8 md:mx-12"
+            className="glass-effect-tech rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-6 sm:mx-8 md:mx-12"
             key={currentTestimonial.id}
           >
-            <Quote className="h-8 w-8 md:h-12 md:w-12 text-cyan-400 mb-3 md:mb-6" />
-            <p className="text-base md:text-xl lg:text-2xl text-white mb-5 md:mb-8 leading-relaxed italic font-light">
+            <Quote className="h-6 w-6 sm:h-8 sm:w-8 md:h-12 md:w-12 text-cyan-400 mb-2 sm:mb-3 md:mb-6" />
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white mb-4 sm:mb-5 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
-            <div className="flex items-center gap-4 md:gap-6 border-t border-white/20 pt-5 md:pt-8">
+            <div className="flex items-center gap-3 sm:gap-4 md:gap-6 border-t border-white/20 pt-4 sm:pt-5 md:pt-8">
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-cyan-400 object-cover"
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-2 sm:border-4 border-cyan-400 object-cover flex-shrink-0"
               />
-              <p className="text-white font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
+              <p className="text-white font-bold text-base sm:text-lg md:text-xl">{currentTestimonial.name}</p>
             </div>
           </div>
 

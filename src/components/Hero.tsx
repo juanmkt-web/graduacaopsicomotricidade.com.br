@@ -5,11 +5,11 @@ import heroBackground from "@/assets/hero-tech-grad.jpg";
 const Hero = () => {
   return (
     <section
-      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16"
+      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16 min-h-[500px] sm:min-h-[550px] md:min-h-[600px]"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundPosition: "top right",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#1E2842]/90 via-[#1E2842]/60 via-50% to-transparent to-70%"></div>
@@ -27,15 +27,15 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
-        <div className="max-w-2xl mb-6 md:mb-12">
+      <div className="container mx-auto px-4 sm:px-6 py-4 md:py-12 relative z-10">
+        <div className="max-w-xl sm:max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
             <div className="inline-block bg-violet-500/20 backdrop-blur-sm border border-violet-400/40 rounded-full px-4 py-1.5 mb-4">
               <span className="text-violet-300 font-semibold text-sm">GRADUAÇÃO EM ADS</span>
             </div>
 
             <h1
-              className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 leading-tight"
+              className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 leading-tight"
               style={{
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.4)",
               }}
@@ -43,7 +43,7 @@ const Hero = () => {
               CONSTRUA UMA CARREIRA <span className="text-[#783BED]">EM TECNOLOGIA</span> SEM FRONTEIRAS.
             </h1>
 
-            <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
+            <p className="text-sm sm:text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
               Não perca a maior oportunidade da década. Saia do zero e aprenda a desenvolver soluções, apps e sites que
               valem ouro no mercado corporativo atual.
             </p>
@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:from-violet-500 hover:to-blue-500 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
+                  className="bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:from-violet-500 hover:to-blue-500 font-bold text-xs sm:text-sm md:text-lg px-5 sm:px-6 md:px-10 py-4 sm:py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full sm:w-auto"
                 >
                   QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
