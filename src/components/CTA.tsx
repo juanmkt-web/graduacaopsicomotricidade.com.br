@@ -62,7 +62,7 @@ const CTA = () => {
               <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-1 md:mb-6 leading-tight">
                 GARANTA SUA VAGA NO{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">
-                  GRADUAÇÃO EM ADS
+                  GRADUAÇÃO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
                 </span>
               </h2>
               <p className="text-xs md:text-xl text-white/90 max-w-2xl mx-auto">
