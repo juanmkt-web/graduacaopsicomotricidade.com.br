@@ -137,24 +137,27 @@ All colors MUST be HSL.
 
 /* Hero background positioning */
 .hero-background {
-  background-position: right top;
+  /* Use full-height background to avoid cropping the top of the persona */
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 75% top;
 }
 
 @media (max-width: 1024px) {
   .hero-background {
-    background-position: 75% top;
+    background-position: 72% top;
   }
 }
 
 @media (max-width: 768px) {
   .hero-background {
-    background-position: 70% top;
+    background-position: 68% top;
   }
 }
 
 @media (max-width: 550px) {
   .hero-background {
-    background-position: 65% top;
+    background-position: 62% top;
   }
 }
 
