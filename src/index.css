@@ -137,12 +137,24 @@ All colors MUST be HSL.
 
 /* Hero background positioning */
 .hero-background {
-  background-position: top right;
+  background-position: center right;
+}
+
+@media (max-width: 1024px) {
+  .hero-background {
+    background-position: 70% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-background {
+    background-position: 65% top;
+  }
 }
 
 @media (max-width: 550px) {
   .hero-background {
-    background-position: top 75%;
+    background-position: 60% top;
   }
 }
 
