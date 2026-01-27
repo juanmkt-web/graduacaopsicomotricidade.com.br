@@ -30,7 +30,9 @@ const Hero = () => {
         <div className="max-w-xl sm:max-w-2xl mb-3 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
             <div className="inline-block bg-violet-500/20 backdrop-blur-sm border border-violet-400/40 rounded-full px-3 py-1 mb-2 md:px-4 md:py-1.5 md:mb-4">
-              <span className="text-violet-300 font-semibold text-[10px] md:text-sm">GRADUAÇÃO EM ADS</span>
+              <span className="text-violet-300 font-semibold text-[10px] md:text-sm">
+                GRADUAÇÃO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+              </span>
             </div>
 
             <h1
